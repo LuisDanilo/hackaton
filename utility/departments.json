@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Nariño",
+    "deshabilitado": true
+  },
+  {
+    "nombre": "Valle del cauca",
+    "deshabilitado": false
+  },
+  {
+    "nombre": "Putumayo",
+    "deshabilitado": false
+  }
+]
