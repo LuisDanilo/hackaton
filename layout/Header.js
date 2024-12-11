@@ -133,6 +133,7 @@ const Header = ({ header }) => {
       return <Header3 sidebarClick={sidebarClick} />
   }
 }
+
 export default Header
 
 const Header1 = ({ sidebarClick }) => {
@@ -143,7 +144,7 @@ const Header1 = ({ sidebarClick }) => {
   return (
     <Fragment>
       <header className="main-header header-one white-menu menu-absolute fixed-header">
-        {/*Header-Upper*/}
+        {/* Logo */}
         <div className="header-upper py-30 rpy-0">
           <div className="container-fluid clearfix">
             <div className="header-inner rel d-flex align-items-center">
@@ -151,61 +152,21 @@ const Header1 = ({ sidebarClick }) => {
                 <div className="logo">
                   <Link href="/">
                     <img
+                    // TODO Cambiar este logo
                       src="assets/images/logos/logo.png"
-                      alt="Logo"
-                      title="Logo"
+                      alt="Roamica"
+                      title="Roamica"
                     />
                   </Link>
                 </div>
               </div>
+              {/* Barra de menu */}
               <div className="nav-outer mx-lg-auto ps-xxl-5 clearfix">
-                {/* Main Menu */}
                 <Menu />
-                {/* Main Menu End*/}
               </div>
-              {/* Nav Search */}
+              {/* Boton de buscador */}
               <div className="nav-search">
-                <button
-                  className="far fa-search"
-                  onClick={() => setToggleSearch(!toggleSearch)}
-                />
-                <form
-                  action="#"
-                  className={toggleSearch ? "" : "hide"}
-                  ref={domNode}
-                >
-                  <input
-                    type="text"
-                    placeholder="Search"
-                    className="searchbox"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="searchbutton far fa-search"
-                  />
-                </form>
-              </div>
-              {/* Menu Button */}
-              <div className="menu-btns py-10">
-                <Link
-                  href="contact"
-                  className="theme-btn style-two bgc-secondary"
-                >
-                  <span data-hover="Book Now">Book Now</span>
-                  <i className="fal fa-arrow-right" />
-                </Link>
-                {/* menu sidbar */}
-                <div
-                  className="menu-sidebar"
-                  onClick={() => sidebarClick()}
-                >
-                  <button className="bg-transparent">
-                    <span className="icon-bar" />
-                    <span className="icon-bar" />
-                    <span className="icon-bar" />
-                  </button>
-                </div>
+                <button className="far fa-search" />
               </div>
             </div>
           </div>
@@ -216,6 +177,7 @@ const Header1 = ({ sidebarClick }) => {
     </Fragment>
   )
 }
+
 const Header2 = ({ sidebarClick }) => {
   const [activeMenu, setActiveMenu] = useState("")
   const [multiMenu, setMultiMenu] = useState("")

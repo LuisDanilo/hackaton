@@ -4,6 +4,9 @@ import SectionTitle from "@/components/SectionTitle"
 import Testimonial from "@/components/slider/Testimonial"
 import ReveloLayout from "@/layout/ReveloLayout"
 import Link from "next/link"
+import destinations from "@/utility/destinations"
+import popularDestinations from "@/utility/popular_destinations"
+
 const page = () => {
   return (
     <ReveloLayout
@@ -24,17 +27,18 @@ const page = () => {
           </h1>
           <div
             className="main-hero-image bgs-cover"
-            style={{ backgroundImage: "url(assets/images/hero/hero.jpg)" }}
+            style={{ backgroundImage: "url(assets/images/hero/hero.webp)" }}
           />
         </div>
+        {/* Filtro de busqueda de lugares */}
         <SearchFilter />
       </section>
-      {/* Hero Area End */}
-      {/* Destinations Area start */}
+      {/* Cards con algunos lugares */}
       <section className="destinations-area bgc-black pt-100 pb-70 rel z-1">
         <div className="container-fluid">
           <div className="row justify-content-center">
             <div className="col-lg-12">
+              {/* Titulo y subtitulo */}
               <div
                 className="section-title text-white text-center counter-text-wrap mb-70"
                 data-aos="fade-up"
@@ -42,207 +46,64 @@ const page = () => {
                 data-aos-offset={50}
               >
                 <SectionTitle
-                  title={"Discover the World's Treasures with Ravelo"}
-                  countValue={34500}
-                  subtitle1={"One site"}
-                  subtitle2={"most popular experience you’ll remember"}
+                  title={"Descubre los tesoros de Nariño con Roamica"}
+                  countValue={1}
+                  subtitle1={"Naturaleza, tradición y cultura"}
+                  subtitle2={""}
                 />
               </div>
             </div>
           </div>
+          {/* Algunos destinos */}
           <div className="row justify-content-center">
-            <div className="col-xxl-3 col-xl-4 col-md-6">
-              <div
-                className="destination-item"
-                data-aos="fade-up"
-                data-aos-duration={1500}
-                data-aos-offset={50}
-              >
-                <div className="image">
-                  <div className="ratting">
-                    <i className="fas fa-star" /> 4.8
+            {destinations.map((d) => (
+              <div className="col-xxl-3 col-xl-4 col-md-6">
+                <div
+                  className="destination-item"
+                  data-aos="fade-up"
+                  data-aos-duration={1500}
+                  data-aos-offset={50}
+                >
+                  <div className="image">
+                    <div className="ratting">
+                      <i className="fas fa-star" /> 4.8
+                    </div>
+                    <a
+                      href="#"
+                      className="heart"
+                    >
+                      <i className="fas fa-heart" />
+                    </a>
+                    <img src={d.imagen} />
                   </div>
-                  <a
-                    href="#"
-                    className="heart"
-                  >
-                    <i className="fas fa-heart" />
-                  </a>
-                  <img
-                    src="assets/images/destinations/visiting-place1.jpg"
-                    alt="Destination"
-                  />
-                </div>
-                <div className="content">
-                  <span className="location">
-                    <i className="fal fa-map-marker-alt" /> Tours, France
-                  </span>
-                  <h5>
-                    <Link href="destination-details">
-                      Brown Concrete Building Basilica St Martin
-                    </Link>
-                  </h5>
-                  <span className="time">3 days 2 nights - Couple</span>
-                </div>
-                <div className="destination-footer">
-                  <span className="price">
-                    <span>$58.00</span>/per person
-                  </span>
-                  <a
-                    href="#"
-                    className="read-more"
-                  >
-                    Book Now <i className="fal fa-angle-right" />
-                  </a>
+                  <div className="content">
+                    <span className="location">
+                      <i className="fal fa-map-marker-alt" />
+                      Nariño
+                    </span>
+                    <h5>
+                      <Link href="destination-details">{d.nombre}</Link>
+                    </h5>
+                    <span className="time">{d.dias_tour}</span>
+                  </div>
+                  <div className="destination-footer">
+                    <span className="price">
+                      <span>{d.precio_por_persona}</span>/por persona
+                    </span>
+                    {/* <a
+                      href="#"
+                      className="read-more"
+                    >
+                      Leer más <i className="fal fa-angle-right" />
+                    </a> */}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-xxl-3 col-xl-4 col-md-6">
-              <div
-                className="destination-item"
-                data-aos="fade-up"
-                data-aos-delay={100}
-                data-aos-duration={1500}
-                data-aos-offset={50}
-              >
-                <div className="image">
-                  <div className="ratting">
-                    <i className="fas fa-star" /> 4.8
-                  </div>
-                  <a
-                    href="#"
-                    className="heart"
-                  >
-                    <i className="fas fa-heart" />
-                  </a>
-                  <img
-                    src="assets/images/destinations/visiting-place2.jpg"
-                    alt="Destination"
-                  />
-                </div>
-                <div className="content">
-                  <span className="location">
-                    <i className="fal fa-map-marker-alt" /> Wildest, Italy
-                  </span>
-                  <h5>
-                    <Link href="destination-details">
-                      Blue lake water view taken travel with daytime
-                    </Link>
-                  </h5>
-                  <span className="time">3 days 2 nights - Couple</span>
-                </div>
-                <div className="destination-footer">
-                  <span className="price">
-                    <span>$63.00</span>/per person
-                  </span>
-                  <a
-                    href="#"
-                    className="read-more"
-                  >
-                    Book Now <i className="fal fa-angle-right" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xxl-3 col-xl-4 col-md-6">
-              <div
-                className="destination-item"
-                data-aos="fade-up"
-                data-aos-delay={200}
-                data-aos-duration={1500}
-                data-aos-offset={50}
-              >
-                <div className="image">
-                  <div className="ratting">
-                    <i className="fas fa-star" /> 4.8
-                  </div>
-                  <a
-                    href="#"
-                    className="heart"
-                  >
-                    <i className="fas fa-heart" />
-                  </a>
-                  <img
-                    src="assets/images/destinations/visiting-place3.jpg"
-                    alt="Destination"
-                  />
-                </div>
-                <div className="content">
-                  <span className="location">
-                    <i className="fal fa-map-marker-alt" /> Rome, Italy
-                  </span>
-                  <h5>
-                    <Link href="destination-details">
-                      Woman standing near Colosseum, Rome
-                    </Link>
-                  </h5>
-                  <span className="time">3 days 2 nights - Couple</span>
-                </div>
-                <div className="destination-footer">
-                  <span className="price">
-                    <span>$42</span>/per person
-                  </span>
-                  <a
-                    href="#"
-                    className="read-more"
-                  >
-                    Book Now <i className="fal fa-angle-right" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xxl-3 col-xl-4 col-md-6">
-              <div
-                className="destination-item"
-                data-aos="fade-up"
-                data-aos-delay={300}
-                data-aos-duration={1500}
-                data-aos-offset={50}
-              >
-                <div className="image">
-                  <div className="ratting">
-                    <i className="fas fa-star" /> 4.8
-                  </div>
-                  <a
-                    href="#"
-                    className="heart"
-                  >
-                    <i className="fas fa-heart" />
-                  </a>
-                  <img
-                    src="assets/images/destinations/visiting-place4.jpg"
-                    alt="Destination"
-                  />
-                </div>
-                <div className="content">
-                  <span className="location">
-                    <i className="fal fa-map-marker-alt" /> Rome, Italy
-                  </span>
-                  <h5>
-                    <Link href="destination-details">
-                      Woman standing near Colosseum, Rome
-                    </Link>
-                  </h5>
-                  <span className="time">3 days 2 nights - Couple</span>
-                </div>
-                <div className="destination-footer">
-                  <span className="price">
-                    <span>$52.00</span>/per person
-                  </span>
-                  <a
-                    href="#"
-                    className="read-more"
-                  >
-                    Book Now <i className="fal fa-angle-right" />
-                  </a>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
-      {/* Destinations Area end */}
-      {/* About Us Area start */}
+      {/* Seccion de experiencia y nro de clientes satisfechos */}
       <section className="about-us-area py-100 rpb-90 rel z-1">
         <div className="container">
           <div className="row align-items-center">
@@ -254,53 +115,49 @@ const page = () => {
                 data-aos-offset={50}
               >
                 <div className="section-title mb-25">
-                  <h2>
-                    Travel with Confidence Top Reasons to Choose Our Agency
-                  </h2>
+                  <h2>Crea tu itinerario de viaje de forma fácil</h2>
                 </div>
-                <p>
-                  We go above and beyond to make your travel dreams reality
-                  hidden gems and must-see attractions
-                </p>
+                <p>Hacemos de tu aventura un sueño de descubrimiento</p>
                 <div className="divider counter-text-wrap mt-45 mb-55">
                   <span>
-                    We have{" "}
+                    Contamos con{" "}
                     <span>
                       <span
                         className="count-text plus"
                         data-speed={3000}
-                        data-stop={25}
+                        data-stop={5}
                       >
-                        <Counter end={25} />
+                        <Counter end={10} />
                       </span>{" "}
-                      Years
+                      sitios turísticos
                     </span>{" "}
-                    of experience
                   </span>
                 </div>
                 <div className="row">
                   <div className="col-6">
                     <div className="counter-item counter-text-wrap">
                       <span
-                        className="count-text k-plus"
+                        className="count-text"
                         data-speed={3000}
                         data-stop={3}
                       >
                         <Counter end={3} />
                       </span>
-                      <span className="counter-title">Popular Destination</span>
+                      <span className="counter-title">Años de experiencia</span>
                     </div>
                   </div>
                   <div className="col-6">
                     <div className="counter-item counter-text-wrap">
                       <span
-                        className="count-text m-plus"
+                        className="count-text k-plus"
                         data-speed={3000}
-                        data-stop={9}
+                        data-stop={1}
                       >
                         <Counter end={9} />
                       </span>
-                      <span className="counter-title">Satisfied Clients</span>
+                      <span className="counter-title">
+                        Clientes satisfechos
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -308,9 +165,7 @@ const page = () => {
                   href="destination1"
                   className="theme-btn mt-10 style-two"
                 >
-                  <span data-hover="Explore Destinations">
-                    Explore Destinations
-                  </span>
+                  <span data-hover="Explorar destinos">Explorar destinos</span>
                   <i className="fal fa-arrow-right" />
                 </Link>
               </div>
@@ -373,8 +228,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      {/* About Us Area end */}
-      {/* Popular Destinations Area start */}
+      {/* Destinos populares */}
       <section className="popular-destinations-area rel z-1">
         <div className="container-fluid">
           <div className="popular-destinations-wrap br-20 bgc-lighter pt-100 pb-70">
@@ -387,15 +241,50 @@ const page = () => {
                   data-aos-offset={50}
                 >
                   <SectionTitle
-                    title={"Explore Popular Destinations"}
-                    subtitle2="most popular experience"
+                    title={"Descubre algunos destinos populares"}
+                    subtitle2=""
+                    subtitle1=""
                   />
                 </div>
               </div>
             </div>
             <div className="container">
               <div className="row justify-content-center">
-                <div className="col-xl-3 col-md-6">
+                {popularDestinations.map((pa) => (
+                  <div className="col-md-6 col-xl-3">
+                    <div
+                      className="destination-item style-two"
+                      data-aos="flip-up"
+                      data-aos-duration={1500}
+                      data-aos-offset={50}
+                    >
+                      <div className="image">
+                        <a
+                          href="#"
+                          className="heart"
+                        >
+                          <i className="fas fa-heart" />
+                        </a>
+                        <img src={pa.imagen} />
+                      </div>
+                      <div className="content">
+                        <h6>
+                          <Link href="destination-details">{pa.nombre}</Link>
+                        </h6>
+                        <span className="time">
+                          {pa.tours}+ tours &amp; {pa.actividades} actividades
+                        </span>
+                        <a
+                          href="#"
+                          className="more"
+                        >
+                          <i className="fas fa-chevron-right" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                {/* <div className="col-xl-3 col-md-6">
                   <div
                     className="destination-item style-two"
                     data-aos="flip-up"
@@ -614,13 +503,12 @@ const page = () => {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* Popular Destinations Area end */}
       {/* Features Area start */}
       <section className="features-area pt-100 pb-45 rel z-1">
         <div className="container">

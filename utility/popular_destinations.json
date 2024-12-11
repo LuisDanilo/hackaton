@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Laguna de la cocha",
+    "tours": 18,
+    "actividades": 3,
+    "imagen": "assets/images/destinations/destination1.jpg"
+  },
+  {
+    "nombre": "Termales de Genoy",
+    "tours": 4,
+    "actividades": 1,
+    "imagen": "assets/images/destinations/destination1.jpg"
+  },
+  {
+    "nombre": "Santuario de las lajas",
+    "tours": "38",
+    "actividades": 3,
+    "imagen": "assets/images/destinations/destination1.jpg"
+  }
+]
