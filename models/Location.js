@@ -15,6 +15,9 @@ const LocationSchema = new mongoose.Schema({
     email: { type: String, required: true },
   },
   imageUrl: { type: String, required: true },
+  popular: { type: Boolean, required: true },
+  tours: { type: Number, required: true },
+  actividades: { type: Number, required: true },
 });
 
 export default mongoose.models.Location || mongoose.model('Location', LocationSchema); 

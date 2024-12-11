@@ -5,21 +5,11 @@ export async function GET(request) {
     await dbConnect();
 
     try {
-        const departamentos = await Location.distinct('departamento');
+        const lugares = await Location.find({});
 
-        const departamentosConEstado = departamentos.map(departamento => {
-            return {
-                nombre: departamento,
-                desabilitado: false
-            };
-        });
+        const popularDestinations = lugares.filter(lugar => lugar._doc.popular === true);
 
-        departamentosConEstado.push(
-            { name: 'Departamento 1', active: false },
-            { name: 'Departamento 2', active: false }
-        );
-
-        return new Response(JSON.stringify(departamentosConEstado), {
+        return new Response(JSON.stringify(popularDestinations), {
             status: 200,
             headers: {
                 'Content-Type': 'application/json',
