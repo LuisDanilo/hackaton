@@ -1,7 +1,18 @@
-import departments from "@/utility/departments"
-import activities from "@/utility/activities"
+async function getDepartments() {
+  const response = await fetch("http://localhost:3000/api/departamentos")
+  const data = response.json()
+  return data
+}
 
-const SearchFilter = () => {
+async function getActivities() {
+  const module = await import("@/utility/activities")
+  return module.default
+}
+
+const SearchFilter = async () => {
+  const departments = await getDepartments()
+  const activities = await getActivities()
+
   return (
     <div className="container container-1400">
       <div
@@ -59,7 +70,7 @@ const SearchFilter = () => {
             <option value="value2">10</option>
             <option value="value2">20</option>
           </select> */}
-          <input type="date" />
+          <div className="date"></div>
         </div>
         <div className="filter-item clearfix">
           <div className="icon">

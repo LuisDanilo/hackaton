@@ -4,10 +4,18 @@ import SectionTitle from "@/components/SectionTitle"
 import Testimonial from "@/components/slider/Testimonial"
 import ReveloLayout from "@/layout/ReveloLayout"
 import Link from "next/link"
-import destinations from "@/utility/destinations"
 import popularDestinations from "@/utility/popular_destinations"
 
-const page = () => {
+async function getDestinations() {
+  const response = await fetch("http://localhost:3000/api/lugares")
+  const data = await response.json()
+  console.log(data)
+  return data
+}
+
+const page = async () => {
+  const destinations = await getDestinations()
+
   return (
     <ReveloLayout
       header={1}

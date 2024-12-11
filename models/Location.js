@@ -14,7 +14,7 @@ const LocationSchema = new mongoose.Schema({
     telefono: { type: String, required: true },
     email: { type: String, required: true },
   },
-  imageUrl: { type: String, required: true },
+  imagen: { type: String, required: true },
   popular: { type: Boolean, required: true },
   tours: { type: Number, required: true },
   actividades: { type: Number, required: true },

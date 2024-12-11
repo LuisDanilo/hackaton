@@ -11,7 +11,7 @@
       "telefono": "+57 314 567 8901",
       "email": "info@fincalacosecha.com"
     },
-    "imageUrl": "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/hotelier-images/79/6a/a534f71f9cce70f2d35f7233c08d639418838cbe3a3510dceece87dabb54.jpeg"
+    "imagen": "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/hotelier-images/79/6a/a534f71f9cce70f2d35f7233c08d639418838cbe3a3510dceece87dabb54.jpeg"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "telefono": "+57 310 678 9123",
       "email": "contacto@santuariogaleras.com"
     },
-    "imageUrl": "https://image.jimcdn.com/app/cms/image/transf/dimension=778x10000:format=jpg/path/s30f4f4d3c44d12ba/image/i5b50410d77adddef/version/1593257793/volc%C3%A1n-galeras-pasto.jpg"
+    "imagen": "https://image.jimcdn.com/app/cms/image/transf/dimension=778x10000:format=jpg/path/s30f4f4d3c44d12ba/image/i5b50410d77adddef/version/1593257793/volc%C3%A1n-galeras-pasto.jpg"
   },
   {
     "id": 3,
@@ -43,7 +43,7 @@
       "telefono": "+57 311 234 5678",
       "email": "reservas@intiwasi.com"
     },
-    "imageUrl": "https://www.turismocordoba.com.ar/cabanaintihuasi/img-cliente/04.jpg"
+    "imagen": "https://www.turismocordoba.com.ar/cabanaintihuasi/img-cliente/04.jpg"
   },
   {
     "id": 4,
@@ -59,7 +59,7 @@
       "telefono": "+57 312 789 3456",
       "email": "info@chimayoy.com"
     },
-    "imageUrl": "https://viajandox.com.co/uploads/Centro%20Ambiental%20Chimayoy_1.jpg"
+    "imagen": "https://viajandox.com.co/uploads/Centro%20Ambiental%20Chimayoy_1.jpg"
   },
   {
     "id": 5,
@@ -75,7 +75,7 @@
       "telefono": "+57 315 123 4567",
       "email": "contacto@elencanto.com"
     },
-    "imageUrl": "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/hotelier-images/79/6a/a534f71f9cce70f2d35f7233c08d639418838cbe3a3510dceece87dabb54.jpeg"
+    "imagen": "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/hotelier-images/79/6a/a534f71f9cce70f2d35f7233c08d639418838cbe3a3510dceece87dabb54.jpeg"
   },
   {
     "id": 6,
@@ -91,7 +91,7 @@
       "telefono": "+57 316 567 8902",
       "email": "info@laplanada.com"
     },
-    "imageUrl": "https://albasud.org/news/1627.jpg"
+    "imagen": "https://albasud.org/news/1627.jpg"
   },
   {
     "id": 7,
@@ -107,7 +107,7 @@
       "telefono": "+57 317 890 1234",
       "email": "info@museotaminango.com"
     },
-    "imageUrl": "https://museotaminango.com/visitavirtual/images/entrada-principal-min.jpg"
+    "imagen": "https://museotaminango.com/visitavirtual/images/entrada-principal-min.jpg"
   },
   {
     "id": 8,
@@ -123,7 +123,7 @@
       "telefono": "+57 318 234 5678",
       "email": "reservas@aguashediondas.com"
     },
-    "imageUrl": "https://tubarco.news/wp-content/uploads/2024/05/05E516C0-BC37-4476-8F04-BE6FC18820D9.png"
+    "imagen": "https://tubarco.news/wp-content/uploads/2024/05/05E516C0-BC37-4476-8F04-BE6FC18820D9.png"
   },
   {
     "id": 9,
@@ -139,7 +139,7 @@
       "telefono": "+57 319 345 6789",
       "email": "info@lagodelacocha.com"
     },
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoFT1rWN93XdKqLVSXRWfERHn0C4tz8BOLzA&s"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoFT1rWN93XdKqLVSXRWfERHn0C4tz8BOLzA&s"
   },
   {
     "id": 10,
@@ -155,6 +155,6 @@
       "telefono": "+57 320 456 7890",
       "email": "info@pueblitonarinense.com"
     },
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFiIHFcQBZHAu2osohR4OVMGcMUW5FlZ_Atg&s"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFiIHFcQBZHAu2osohR4OVMGcMUW5FlZ_Atg&s"
   }
 ]

@@ -36,10 +36,10 @@ const Menu = () => {
         >
           <ul className="navigation clearfix">
             <li>
-              <Link href="about">Inicio</Link>
+              <Link href="/">Inicio</Link>
             </li>
             <li>
-              <Link href="about">Acerca de</Link>
+              <Link href="/about">Sobre nosotros</Link>
             </li>
             <li className="dropdown">
               <a href="#">Tours</a>
@@ -48,64 +48,10 @@ const Menu = () => {
                   <Link href="tour-list">Explorar lista de lugares</Link>
                 </li>
                 <li>
-                  <Link href="tour-grid">Tour Grid</Link>
+                  <Link href="tour-guide">Guías de tour</Link>
                 </li>
                 <li>
-                  <Link href="tour-sidebar">Tour Sidebar</Link>
-                </li>
-                <li>
-                  <Link href="tour-details">Tour Details</Link>
-                </li>
-                <li>
-                  <Link href="tour-guide">Tour Guide</Link>
-                </li>
-              </ul>
-              <div className="dropdown-btn">
-                <span className="far fa-angle-down" />
-              </div>
-            </li>
-            <li className="dropdown">
-              <a href="#">Páginas</a>
-              <ul>
-                <li>
-                  <Link href="pricing">Pricing</Link>
-                </li>
-                <li>
-                  <Link href="faqs">faqs</Link>
-                </li>
-                <li className="dropdown">
-                  <a href="#">Gallery</a>
-                  <ul>
-                    <li>
-                      <Link href="gellery-grid">Gallery Grid</Link>
-                    </li>
-                    <li>
-                      <Link href="gellery-slider">Gallery Slider</Link>
-                    </li>
-                  </ul>
-                  <div className="dropdown-btn">
-                    <span className="far fa-angle-down" />
-                  </div>
-                </li>
-                <li className="dropdown">
-                  <a href="#">products</a>
-                  <ul>
-                    <li>
-                      <Link href="shop">Our Products</Link>
-                    </li>
-                    <li>
-                      <Link href="product-details">Product Details</Link>
-                    </li>
-                  </ul>
-                  <div className="dropdown-btn">
-                    <span className="far fa-angle-down" />
-                  </div>
-                </li>
-                <li>
-                  <Link href="contact">Contact Us</Link>
-                </li>
-                <li>
-                  <Link href="404">404 Error</Link>
+                  <Link href="shop">Productos</Link>
                 </li>
               </ul>
               <div className="dropdown-btn">
@@ -152,7 +98,7 @@ const Header1 = ({ sidebarClick }) => {
                 <div className="logo">
                   <Link href="/">
                     <img
-                    // TODO Cambiar este logo
+                      // TODO Cambiar este logo
                       src="assets/images/logos/logo.png"
                       alt="Roamica"
                       title="Roamica"
