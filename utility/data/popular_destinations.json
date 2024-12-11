@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "lugares": 1,
+    "tours": 23,
+   " activities": 3
+  },
+  {
+    "id": 2,
+    "lugares": 3,
+    "tours": 23,
+   " activities": 3
+  },
+  {
+    "id": 3,
+    "lugares": 2,
+    "tours": 23,
+   " activities": 3
+  }
+]

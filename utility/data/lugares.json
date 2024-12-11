@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "nombre": "Finca La Cosecha",
+    "descripcion": "Un lugar acogedor para aprender sobre el cultivo de lulo y disfrutar de paisajes únicos.",
+    "ubicacion": {
+      "lat": 1.21361,
+      "lon": -77.28111
+    },
+    "contacto": {
+      "telefono": "+57 314 567 8901",
+      "email": "info@fincalacosecha.com"
+    },
+    "imageUrl": "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/hotelier-images/79/6a/a534f71f9cce70f2d35f7233c08d639418838cbe3a3510dceece87dabb54.jpeg"
+  },
+  {
+    "id": 2,
+    "nombre": "Santuario de Flora y Fauna Galeras",
+    "descripcion": "Espacio natural protegido que ofrece senderismo y observación de flora y fauna única.",
+    "ubicacion": {
+      "lat": 1.22876,
+      "lon": -77.35858
+    },
+    "ciudad": 1,
+    "tipo_actividad": 1,
+    "contacto": {
+      "telefono": "+57 310 678 9123",
+      "email": "contacto@santuariogaleras.com"
+    },
+    "imageUrl": "https://image.jimcdn.com/app/cms/image/transf/dimension=778x10000:format=jpg/path/s30f4f4d3c44d12ba/image/i5b50410d77adddef/version/1593257793/volc%C3%A1n-galeras-pasto.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Cabañas Inti Wasi",
+    "descripcion": "Cabañas tradicionales rodeadas de montañas para una experiencia cultural y natural.",
+    "ubicacion": {
+      "lat": 1.14567,
+      "lon": -77.34512
+    },
+    "ciudad": 1,
+    "tipo_actividad": 2,
+    "contacto": {
+      "telefono": "+57 311 234 5678",
+      "email": "reservas@intiwasi.com"
+    },
+    "imageUrl": "https://www.turismocordoba.com.ar/cabanaintihuasi/img-cliente/04.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Parque Natural Chimayoy",
+    "descripcion": "Centro ecológico dedicado a la educación ambiental y actividades al aire libre.",
+    "ubicacion": {
+      "lat": 1.19567,
+      "lon": -77.29523
+    },
+    "ciudad": 1,
+    "tipo_actividad": 1,
+    "contacto": {
+      "telefono": "+57 312 789 3456",
+      "email": "info@chimayoy.com"
+    },
+    "imageUrl": "https://viajandox.com.co/uploads/Centro%20Ambiental%20Chimayoy_1.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Hacienda El Encanto",
+    "descripcion": "Lugar para conocer procesos tradicionales de cultivo de café y disfrutar de degustaciones.",
+    "ubicacion": {
+      "lat": 1.23456,
+      "lon": -77.31234
+    },
+    "ciudad": 1,
+    "tipo_actividad": 3,
+    "contacto": {
+      "telefono": "+57 315 123 4567",
+      "email": "contacto@elencanto.com"
+    },
+    "imageUrl": "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/hotelier-images/79/6a/a534f71f9cce70f2d35f7233c08d639418838cbe3a3510dceece87dabb54.jpeg"
+  },
+  {
+    "id": 6,
+    "nombre": "Reserva Natural La Planada",
+    "descripcion": "Un espacio único para conocer la biodiversidad de Nariño y disfrutar de caminatas ecológicas.",
+    "ubicacion": {
+      "lat": 1.11834,
+      "lon": -77.34598
+    },
+    "ciudad": 2,
+    "tipo_actividad": 1,
+    "contacto": {
+      "telefono": "+57 316 567 8902",
+      "email": "info@laplanada.com"
+    },
+    "imageUrl": "https://albasud.org/news/1627.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Museo Taminango",
+    "descripcion": "Un recorrido por la historia y el arte de Nariño en una casa colonial bien conservada.",
+    "ubicacion": {
+      "lat": 1.21453,
+      "lon": -77.27911
+    },
+    "ciudad": 1,
+    "tipo_actividad": 2,
+    "contacto": {
+      "telefono": "+57 317 890 1234",
+      "email": "info@museotaminango.com"
+    },
+    "imageUrl": "https://museotaminango.com/visitavirtual/images/entrada-principal-min.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Termales de Aguas Hediondas",
+    "descripcion": "Relájate en las aguas termales naturales, famosas por sus propiedades curativas.",
+    "ubicacion": {
+      "lat": 1.15678,
+      "lon": -77.28945
+    },
+    "ciudad": 1,
+    "tipo_actividad": "Turismo de bienestar",
+    "contacto": {
+      "telefono": "+57 318 234 5678",
+      "email": "reservas@aguashediondas.com"
+    },
+    "imageUrl": "https://tubarco.news/wp-content/uploads/2024/05/05E516C0-BC37-4476-8F04-BE6FC18820D9.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Lago Guamuez (Laguna de La Cocha)",
+    "descripcion": "Uno de los principales destinos turísticos de Nariño, perfecto para paseos en lancha y turismo rural.",
+    "ubicacion": {
+      "lat": 1.07234,
+      "lon": -77.15321
+    },
+    "ciudad": 1,
+    "tipo_actividad": 1,
+    "contacto": {
+      "telefono": "+57 319 345 6789",
+      "email": "info@lagodelacocha.com"
+    },
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoFT1rWN93XdKqLVSXRWfERHn0C4tz8BOLzA&s"
+  },
+  {
+    "id": 10,
+    "nombre": "Pueblito Nariñense",
+    "descripcion": "Un lugar para conocer y disfrutar de las tradiciones, artesanías y gastronomía de la región.",
+    "ubicacion": {
+      "lat": 1.20567,
+      "lon": -77.29045
+    },
+    "ciudad": 1,
+    "tipo_actividad": 2,
+    "contacto": {
+      "telefono": "+57 320 456 7890",
+      "email": "info@pueblitonarinense.com"
+    },
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFiIHFcQBZHAu2osohR4OVMGcMUW5FlZ_Atg&s"
+  }
+]
