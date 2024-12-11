@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "ciudad": "Pasto",
+    "departamento": 1
+  },
+  {
+    "id": 2,
+    "ciudad": "Ricaurte",
+    "departamento": 1
+  },
+  {
+    "id": 3,
+    "ciudad": "Sandona",
+    "departamento": 1
+  },
+  {
+    "id": 4,
+    "ciudad": "Consaca",
+    "departamento": 1
+  }
+]

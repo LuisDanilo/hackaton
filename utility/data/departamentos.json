@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nombre": "Nariño",
+    "dashabilitados": true
+  },
+  {
+    "id": 2,
+    "nombre": "Cauca",
+    "dashabilitados": false
+  },
+  {
+    "id": 3,
+    "nombre": "Putumayo",
+    "dashabilitados": false
+  }
+]
